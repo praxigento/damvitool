@@ -17,7 +17,8 @@ setup(
         'waitress',
         # 'psycopg2',
         'webassets',
-        'static'
+        'static',
+        'sphinx_rtd_theme'
     ],
     # tests_require=[
     # 'webtest',
