@@ -1,0 +1,3 @@
+<DataSource ID="MockupContainer" inheritsFrom="Canvas" Constructor="MockupContainer">
+</DataSource>
+

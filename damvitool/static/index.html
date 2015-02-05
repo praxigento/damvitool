@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>damvitool</title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular-route.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular-resource.js"></script>
+    <!-- setup Isomorphic SmartClient -->
+    <script>var isomorphicDir = "lib/isomorphic/";</script>
+    <script src="lib/isomorphic/system/modules-debug/ISC_Core.js"></script>
+    <script src="lib/isomorphic/system/modules-debug/ISC_Foundation.js"></script>
+    <script src="lib/isomorphic/system/modules-debug/ISC_Containers.js"></script>
+    <script src="lib/isomorphic/system/modules-debug/ISC_Grids.js"></script>
+    <script src="lib/isomorphic/system/modules-debug/ISC_Forms.js"></script>
+    <script src="lib/isomorphic/system/modules-debug/ISC_DataBinding.js"></script>
+    <script src="lib/isomorphic/system/modules-debug/ISC_RichTextEditor.js"></script>
+    <script src="lib/isomorphic/skins/Enterprise/load_skin.js"></script>
+    <script src="lib/js/ng-isc.js"></script>
+
+    <script src="app/auth.js"></script>
+    <script src="app/app.js"></script>
+
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .full {
+            width: 100%;
+            height: 100%
+        }
+    </style>
+</head>
+<body ng-app="damvitool">
+
+<div ng-cloak class="full">
+    <div class="full" isc-h-layout sc-width="'100%'" sc-height="'100%'">
+        <isc-v-stack sc-width="'250px'" sc-height="'100%'" sc-show-resize-bar="true" ng-controller="MenuCtrl">
+            <isc-button sc-i-d="welcomBtn" sc-width="'100%'" sc-title="'Welcome'" sc-on-click="toWelcome"></isc-button>
+            <isc-button sc-i-d="wizardBtn" sc-width="'100%'" sc-title="'Wizard'" sc-on-click="toWizard"></isc-button>
+            <!--<div isc-section-stack="menuCtrl" sc-width="'100%'" sc-default-height="1" sc-overflow="'visible'"-->
+                 <!--ng-show="isLoggedIn()">-->
+                <!--<isc-section-stack-section sc-title="'Requests'" sc-expanded="true">-->
+                    <!--<isc-v-layout sc-width="'100%'" sc-height="'100%'" sc-layout-left-margin="26">-->
+                        <!--<isc-button sc-width="'100%'" sc-title="'Request1'"></isc-button>-->
+                        <!--<isc-button sc-width="'100%'" sc-title="'Request2'"></isc-button>-->
+                        <!--<isc-button sc-width="'100%'" sc-title="'Request3'"></isc-button>-->
+                    <!--</isc-v-layout>-->
+                <!--</isc-section-stack-section>-->
+            <!--</div>-->
+            <isc-button sc-i-d="helpBtn" sc-width="'100%'" sc-title="'Help'" sc-on-click="toHelp"></isc-button>
+            <isc-button sc-i-d="logoutBtn" sc-width="'100%'" sc-title="'Logout'" sc-on-click="logout" ng-show="isLoggedIn()"></isc-button>
+        </isc-v-stack>
+
+        <isc-v-layout sc-width="'*'" sc-height="'100%'" ng-view>
+        </isc-v-layout>
+    </div>
+</div>
+
+</body>
+</html>

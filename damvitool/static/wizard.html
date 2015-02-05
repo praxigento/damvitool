@@ -1,0 +1,28 @@
+<div isc-window="entitiesWnd" sc-width="'400px'" sc-height="'400px'" sc-auto-center="true" sc-is-modal="true"
+     sc-show-modal-mask="true" sc-auto-draw="true" sc-title="'Select entity'"
+     sc-header-controls="['headerLabel', 'closeButton']" sc-dismiss-on-escape="true">
+    <isc-list-grid sc-fields="entityGridFields" sc-data-fetch="onEntityGridDataFetch"
+                   sc-show-filter-editor="true" sc-filter-on-keypress="true" sc-width="'100%'"
+                   sc-height="'100%'" sc-on-record-double-click="onDblClickEntitiesGrid"
+                   sc-sort-field="'name'"></isc-list-grid>
+</div>
+
+<div isc-tree-grid="fieldsTreeCtrl" sc-can-edit="true" sc-modal-editing="false" sc-width="'100%'" sc-height="'40%'"
+     sc-fields="fieldsTreeFields" sc-data-fetch="onFieldsTreeDataFetch" sc-selection-appearance="'checkbox'"
+     sc-on-selection-changed="onFieldsTreeSelect" sc-on-selection-updated="onFieldsTreeSelectUpdate"
+     sc-on-row-editor-exit="onFieldsTreeRowEditorExit" sc-show-resize-bar="true" sc-alternate-record-styles="true"
+     sc-can-sort="false" sc-context-menu="fieldsTreeContextMenu"
+     sc-on-row-context-click="onFieldsTreeRowContextClick"></div>
+
+<isc-layout sc-width="'100%'" sc-height="'*'" sc-overflow="'auto'" sc-show-resize-bar="true">
+    <div isc-filter-builder="filterBuilderCtrl" sc-width="'100%'" sc-data-source="resultDS"
+         sc-on-filter-changed="onFilterChanged"></div>
+</isc-layout>
+
+<div isc-list-grid="resultCtrl" sc-width="'100%'" sc-height="'50%'" sc-data-source="resultDS"
+     sc-show-filter-editor="true" sc-filter-on-keypress="true" sc-show-row-numbers="true"
+     sc-auto-fetch-data="false" sc-on-sort-changed="onSortChanged" sc-on-filter-editor-submit="onSortChanged"
+     sc-allow-filter-expressions="true" sc-auto-fit-width-approach="true" sc-show-grid-summary="true"
+     sc-summary-row-data-source="resultSummariesDS"></div>
+
+<div isc-button sc-width="'100%'" sc-title="'Export result table to csv file'" sc-on-click="onExport"></div>
