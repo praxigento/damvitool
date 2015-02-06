@@ -5,7 +5,7 @@ Using damvitool
 Run damvitool with sample database
 ----------------------------------
 
-Для запуска damvitool достаточно выпонить команду::
+Для запуска damvitool достаточно выполнить команду::
 
     damvitool --database sqlite:///damvitool/data/Chinook_Sqlite.sqlite
 
@@ -18,7 +18,7 @@ damvitool запускает web-сервер с RESTful API для доступ
 Supported databases
 -------------------
 
-damvitool поддерживает теже типы СУБД, как и SQLAlchemy (http://docs.sqlalchemy.org/en/rel_0_9/core/engines.html#supported-databases):
+damvitool поддерживает те же типы СУБД, что и SQLAlchemy (http://docs.sqlalchemy.org/en/rel_0_9/core/engines.html#supported-databases):
 
 * MySQL (MariaDB)
 * PostgreSQL

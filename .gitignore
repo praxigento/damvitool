@@ -55,6 +55,7 @@ target/
 
 # Idea IDE
 .idea/
+atlassian-ide-plugin.xml
 
 # buildout generated files
 .mr.developer.cfg
