@@ -30,7 +30,7 @@ Open damvitool frontend in your browser. By default you can open url ``http://lo
 
 Construct new request to database
 ---------------------------------
-1. Click ``Wizard`` button of the left side menu
+1. Click ``Wizard`` button of the left side menu.
 
 .. image:: https://raw.githubusercontent.com/praxigento/damvitool/master/docs/pic1.png
 
@@ -38,11 +38,11 @@ Construct new request to database
 
 .. image:: https://raw.githubusercontent.com/praxigento/damvitool/master/docs/pic2.png
 
-3. Choose root entity of yours data query. If database don't have relations between tables, you can add other root entities.
+3. Choose root entity for your data query. If database doesn't have relations between the tables needed for your query, you can add other root entities.
 
 .. image:: https://raw.githubusercontent.com/praxigento/damvitool/master/docs/pic3.png
 
-4. Choose entities fields, which you want to see.
+4. Choose relevant entities fields.
 5. Set filter criteria.
 6. View results.
 
