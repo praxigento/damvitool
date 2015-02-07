@@ -20,10 +20,6 @@ setup(
         'static',
         'sphinx_rtd_theme'
     ],
-    # tests_require=[
-    # 'webtest',
-    #     'pytest'
-    # ],
     extras_require=dict(
         test=['pytest >= 2.5.2',
               'py >= 1.4.20',
@@ -31,13 +27,25 @@ setup(
               'pytest-remove-stale-bytecode',
               'WebTest >= 2.0.14'],
     ),
-    # package_data={
-    # 'damvitool': ['static/*']
-    # },
     include_package_data=True,
-    url='',
+    url='http://damvitool.readthedocs.org',
     license='LGPL',
     author='alex-smirnov',
     author_email='smirnov.fl@yandex.ru',
-    description='Sandman inspired database and schema agnostic automatic REST API creator and data viewer/analyser'
+    description='Sandman inspired database and schema agnostic automatic REST API creator and data viewer/analyser',
+    long_description=open('README.rst').read(),
+    classifiers=[
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 3',
+        'Development Status :: 4 - Beta',
+        'Natural Language :: English',
+        'Environment :: Web Environment',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)',
+        'Operating System :: OS Independent',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+        'Topic :: Software Development :: Libraries :: Application Frameworks',
+        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
+    ],
 )

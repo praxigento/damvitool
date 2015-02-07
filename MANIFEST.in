@@ -4,3 +4,5 @@ recursive-include damvitool *
 recursive-exclude damvitool/static *
 recursive-include damvitool/static/app *
 recursive-include damvitool/static/lib *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
