@@ -2,6 +2,7 @@ include *.txt *.md *.rst *.cfg *.py *.ini MANIFEST.in LICENSE
 exclude .installed.cfg *.pyc
 recursive-include damvitool *
 recursive-exclude damvitool/static *
+recursive-include damvitool/static *.html
 recursive-include damvitool/static/app *
 recursive-include damvitool/static/lib *
 recursive-exclude * __pycache__
