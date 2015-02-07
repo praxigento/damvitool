@@ -13,12 +13,12 @@ Where sqlite:///damvitool/data/Chinook_Sqlite.sqlite is db access string (Databa
 
 damvitool starts web server with RESTful API for data access and client application that uses that API accessible from any browser.
 
-If you start damvitool without any parameters it will connect to the demo db Chinook_Sqlite, which is distributed together with damvitool.
+If you start damvitool without any parameters it will connect by default to the demo db Chinook_Sqlite, which is distributed together with damvitool.
 
 Supported databases
 -------------------
 
-damvitool sipports the same RDBMS as SQLAlchemy does (http://docs.sqlalchemy.org/en/rel_0_9/core/engines.html#supported-databases):
+damvitool sipports the same RDBMSs as SQLAlchemy does (http://docs.sqlalchemy.org/en/rel_0_9/core/engines.html#supported-databases):
 
 * MySQL (MariaDB)
 * PostgreSQL
