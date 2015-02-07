@@ -10,6 +10,7 @@ from damvitool.users import Users
 from damvitool import version
 import logging
 import os
+from . import path, view, users
 
 
 staticApp = StaticApp()
@@ -74,11 +75,11 @@ def main():
     else:
         Users.load(options.users_file)
 
-    # c = morepath.setup()
-    # c.scan()
-    # c.commit()
+    c = morepath.setup()
+    c.scan(ignore=['.tests'])
+    c.commit()
 
-    morepath.autosetup()
+    # morepath.autosetup()
     logger = logging.getLogger('waitress')
     logger.setLevel(logging.INFO)
     waitress.serve(staticApp, host=options.host, port=options.port)
