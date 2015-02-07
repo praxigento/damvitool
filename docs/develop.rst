@@ -9,7 +9,7 @@ Clone damvitool from github and go to damvitool directory::
     $ git clone https://github.com/praxigento/damvitool.git
     $ cd damvitool
 
-Now we need to run bootstrap.py to set up buildout::
+Run bootstrap.py to set up buildout::
 
     $ python bootstrap.py
 
