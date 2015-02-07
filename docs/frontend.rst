@@ -16,11 +16,11 @@ Construct new request to database
 
 .. image:: pic2.png
 
-3. Choose root entity of yours data query. If database don't have relations between tables, you can add other root entities.
+3. Choose root entity of yours data query. If database doesn't have relations between tables needed for your query, you can add other root entities.
 
 .. image:: pic3.png
 
-4. Choose entities fields, which you want to see.
+4. Choose relevant entities fields.
 5. Set filter criteria.
 6. View results.
 
