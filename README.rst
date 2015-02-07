@@ -17,7 +17,7 @@ Simply run::
 
     $ pip install damvitool
 
-Run damvitool with sample database
+Run damvitool with sample database (Chinook Database for SQLite)
 ----------------------------------
 
 Run damvitool from command line::
