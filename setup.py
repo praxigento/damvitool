@@ -18,7 +18,7 @@ setup(
         # 'psycopg2',
         'webassets',
         'static',
-        'sphinx_rtd_theme'
+        # 'sphinx_rtd_theme'
     ],
     extras_require=dict(
         test=['pytest >= 2.5.2',
