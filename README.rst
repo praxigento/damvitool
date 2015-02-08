@@ -19,16 +19,21 @@ Use pip to install damvitool ::
 
     $ pip install damvitool
 
-Run damvitool with sample database (Chinook Database for SQLite)
-----------------------------------------------------------------
-
 Run damvitool from command line::
 
     $ damvitool
+    
+When you run damvitool from command line without parameters it connects by default to the demo Chinook Database for SQLite.
 
-Open frontend
--------------
-Open damvitool frontend in your browser. By default you can open url ``http://localhost:8080``
+To connect to your legacy database run damvitool with your database URL as parameter, like so::
+
+damvitool --database sqlite:///damvitool/data/Chinook_Sqlite.sqlite
+
+*sqlite:///damvitool/data/Chinook_Sqlite.sqlite* is database URL in SQLAlchemy format (http://docs.sqlalchemy.org/en/rel_0_9/core/engines.html#database-urls).
+
+damvitool admin panel access
+----------------------------
+Default admin panel url is ``http://localhost:8080``
 
 Construct new request to database
 ---------------------------------
