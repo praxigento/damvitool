@@ -13,12 +13,12 @@ Quick start
 
 Installation
 ------------
-Simply run::
+Use pip to install damvitool ::
 
     $ pip install damvitool
 
 Run damvitool with sample database (Chinook Database for SQLite)
-----------------------------------
+----------------------------------------------------------------
 
 Run damvitool from command line::
 
