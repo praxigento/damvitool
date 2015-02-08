@@ -21,7 +21,7 @@ You can run the backend tests using py.test. Buildout has installed it for you i
 
     $ bin/py.test damvitool
 
-To run frontend tests, you must init node.js environment::
+To run frontend tests, you must initialize node.js environment::
 
     $ npm install
 
