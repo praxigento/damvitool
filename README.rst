@@ -5,7 +5,9 @@ damvitool
 Resources
 =========
 `Documentation <http://damvitool.readthedocs.org>`__
+
 `Bug tracker <http://github.com/praxigento/damvitool/issues>`__
+
 `Code <http://github.com/praxigento/damvitool>`__
 
 Quick start
