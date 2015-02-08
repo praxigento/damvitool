@@ -9,7 +9,7 @@ To run damvitool execute the following command::
 
     damvitool --database sqlite:///damvitool/data/Chinook_Sqlite.sqlite
 
-Where sqlite:///damvitool/data/Chinook_Sqlite.sqlite is database access string (Database Urls) in SQLAlchemy format (http://docs.sqlalchemy.org/en/rel_0_9/core/engines.html#database-urls).
+Where *sqlite:///damvitool/data/Chinook_Sqlite.sqlite* is database URL in SQLAlchemy format (http://docs.sqlalchemy.org/en/rel_0_9/core/engines.html#database-urls).
 
 damvitool starts web server with RESTful API for data access and client application that utilizes that API accessible from any browser.
 
