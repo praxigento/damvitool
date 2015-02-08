@@ -2,7 +2,9 @@
 damvitool
 =========
 
-
+.. image:: http://img.shields.io/:license-lgplv3.0-blue.svg?style=flat-square
+    :target: https://www.gnu.org/licenses/lgpl-3.0.txt
+    
 .. image:: https://badge.fury.io/py/damvitool.png
     :target: http://badge.fury.io/py/damvitool
     :alt: Latest version
@@ -26,11 +28,6 @@ Versioning
 ==========
 
 Semantic Versioning 2.0.0 (http://semver.org)
-
-License
-=======
-
-LGPLv3 (https://www.gnu.org/licenses/lgpl-3.0.txt)
 
 Quick start
 ===========
