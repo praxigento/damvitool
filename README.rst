@@ -44,7 +44,7 @@ Run damvitool from command line::
     
 When you run damvitool from command line without parameters it connects by default to the demo Chinook Database for SQLite.
 
-To connect to your legacy database run damvitool with your database URL as parameter, like so::
+To connect to your legacy database run damvitool with your database URL as parameter, like so ::
 
 damvitool --database sqlite:///damvitool/data/Chinook_Sqlite.sqlite
 
