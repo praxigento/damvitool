@@ -15,6 +15,23 @@ Resources
 
 `Code <http://github.com/praxigento/damvitool>`__
 
+Requirements
+============
+
+Isomorphic SmartClient <http://www.smartclient.com/product/smartclient.jsp> v9.1+
+
+AngularJS <http://www.angularjs.org> v1.2.1+
+
+Versioning
+==========
+
+[Semantic Versioning 2.0.0](http://semver.org)
+
+License
+=======
+
+[LGPLv3](https://www.gnu.org/licenses/lgpl-3.0.txt)
+
 Quick start
 ===========
 
