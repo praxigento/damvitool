@@ -29,11 +29,11 @@ To connect to your legacy database run damvitool with your database URL as param
 
 damvitool --database sqlite:///damvitool/data/Chinook_Sqlite.sqlite
 
-*sqlite:///damvitool/data/Chinook_Sqlite.sqlite* is database URL in SQLAlchemy format (http://docs.sqlalchemy.org/en/rel_0_9/core/engines.html#database-urls).
+where *sqlite:///damvitool/data/Chinook_Sqlite.sqlite* is database URL in SQLAlchemy format (http://docs.sqlalchemy.org/en/rel_0_9/core/engines.html#database-urls).
 
 damvitool admin panel access
 ----------------------------
-Default admin panel url is ``http://localhost:8080``
+Default admin panel URL is ``http://localhost:8080``
 
 Construct new request to database
 ---------------------------------
