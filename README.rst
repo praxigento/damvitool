@@ -24,6 +24,8 @@ Isomorphic SmartClient (http://www.smartclient.com/product/smartclient.jsp) v9.1
 
 AngularJS (http://www.angularjs.org) v1.2.1+
 
+ng_isc (https://github.com/praxigento/ng-isc) v0.2+
+
 Versioning
 ==========
 
