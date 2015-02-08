@@ -5,7 +5,7 @@ damvitool
 .. image:: http://img.shields.io/:license-lgpl v3.0-blue.svg?style=flat-square
     :target: https://www.gnu.org/licenses/lgpl-3.0.txt
     
-.. image:: https://badge.fury.io/py/damvitool.png
+.. image:: https://img.shields.io/pypi/v/damvitool.svg
     :target: http://badge.fury.io/py/damvitool
     :alt: Latest version
 
