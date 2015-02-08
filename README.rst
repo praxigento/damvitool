@@ -19,7 +19,7 @@ Use pip to install damvitool ::
 
     $ pip install damvitool
 
-Run damvitool from command line::
+Run damvitool from command line ::
 
     $ damvitool
     
