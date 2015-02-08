@@ -2,6 +2,11 @@
 damvitool
 =========
 
+
+.. image:: https://badge.fury.io/py/damvitool.png
+    :target: http://badge.fury.io/py/damvitool
+    :alt: Latest version
+
 Resources
 =========
 `Documentation <http://damvitool.readthedocs.org>`__
