@@ -17,8 +17,12 @@ Resources
 
 `Code <http://github.com/praxigento/damvitool>`__
 
-Requirements
-============
+Frameworks and libraries used
+=============================
+
+SQLAlchemy (https://github.com/zzzeek/sqlalchemy) v0.9.8+
+
+Morepath (https://github.com/morepath/morepath) v0.9+
 
 AngularJS (http://www.angularjs.org) v1.2.1+
 
