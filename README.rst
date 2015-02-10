@@ -67,7 +67,7 @@ Default admin panel URL is ``http://localhost:8080``
 
 Build new database request
 --------------------------
-1. Click ``Wizard`` button of the left side menu.
+1. Click ``Wizard``.
 
 .. image:: https://raw.githubusercontent.com/praxigento/damvitool/master/docs/pic1.png
 
