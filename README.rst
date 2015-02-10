@@ -2,6 +2,10 @@
 damvitool
 =========
 
+.. image:: https://badges.gitter.im/Join%20Chat.svg
+   :alt: Join the chat at https://gitter.im/praxigento/damvitool
+   :target: https://gitter.im/praxigento/damvitool?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+
 .. image:: http://img.shields.io/:license-lgpl v3.0-green.svg?style=flat-square
     :target: https://www.gnu.org/licenses/lgpl-3.0.txt
     
