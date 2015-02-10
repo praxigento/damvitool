@@ -9,6 +9,16 @@ damvitool
     :target: http://badge.fury.io/py/damvitool
     :alt: Latest version
 
+Introduction
+============
+
+As stated above this project was inspired by Sandman by Jeff Knup. At the same time damvitool improves on the original in a few important areas:
+
+Support for compound queries (both for REST API and UI)
+Extremely flexible and powerful UI (query builder wizard) thanks to SmartClient library by Isomorphic
+Columns summaries support
+Unlimited resulting (sorted&filtered) grid export to CSV
+
 Resources
 =========
 `Documentation <http://damvitool.readthedocs.org>`__
