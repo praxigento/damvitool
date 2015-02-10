@@ -66,7 +66,7 @@ Construct new request to database
 
 .. image:: https://raw.githubusercontent.com/praxigento/damvitool/master/docs/pic1.png
 
-2. Login.
+2. Login user1/password1 .
 
 .. image:: https://raw.githubusercontent.com/praxigento/damvitool/master/docs/pic2.png
 
