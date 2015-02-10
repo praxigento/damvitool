@@ -75,7 +75,7 @@ Build new database request
 
 .. image:: https://raw.githubusercontent.com/praxigento/damvitool/master/docs/pic2.png
 
-3. Choose root entity for your data query. If tables needed for your query don't have relations between them you can add anoother root entity to your query.
+3. Choose root entity for your data query. If tables needed for your query don't have relations between them you can add another root entity to your query.
 
 .. image:: https://raw.githubusercontent.com/praxigento/damvitool/master/docs/pic3.png
 
