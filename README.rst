@@ -61,8 +61,8 @@ $ damvitool --database sqlite:///damvitool/data/Chinook_Sqlite.sqlite
 
 where *sqlite:///damvitool/data/Chinook_Sqlite.sqlite* is database URL in SQLAlchemy format (http://docs.sqlalchemy.org/en/rel_0_9/core/engines.html#database-urls).
 
-damvitool admin panel access
-----------------------------
+Admin panel access
+------------------
 Default admin panel URL is ``http://localhost:8080``
 
 Build new database request
@@ -71,7 +71,7 @@ Build new database request
 
 .. image:: https://raw.githubusercontent.com/praxigento/damvitool/master/docs/pic1.png
 
-2. Login user1/password1 .
+2. Login with the following credentials: user1/password1 .
 
 .. image:: https://raw.githubusercontent.com/praxigento/damvitool/master/docs/pic2.png
 
