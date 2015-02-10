@@ -71,7 +71,7 @@ Build new database request
 
 .. image:: https://raw.githubusercontent.com/praxigento/damvitool/master/docs/pic1.png
 
-2. Login with the following credentials: user1/password1 .
+2. Login with the following credentials: *user1/password1*.
 
 .. image:: https://raw.githubusercontent.com/praxigento/damvitool/master/docs/pic2.png
 
