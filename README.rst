@@ -16,8 +16,8 @@ As stated above this project was inspired by Sandman by Jeff Knupp. At the same 
 
 * Support for compound queries (both for REST API and UI)
 * Extremely flexible and powerful UI (query builder wizard) thanks to SmartClient library by Isomorphic
-* Columns summaries support
-* Unlimited resulting (sorted&filtered) grid export to CSV
+* Support for column summaries 
+* Unlimited resulting grid (sorted&filtered) export to CSV file
 
 Resources
 =========
