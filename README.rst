@@ -24,6 +24,7 @@ Resources
 * `Documentation <http://damvitool.readthedocs.org>`_
 * `Bug tracker <http://github.com/praxigento/damvitool/issues>`_
 * `Code <http://github.com/praxigento/damvitool>`_
+* `Run/edit damvitool in cloud IDE <https://codenvy.com/f?id=nbmasoip8dnvkc4d>`_
 
 Frameworks and libraries used
 =============================
