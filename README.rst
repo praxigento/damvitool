@@ -12,7 +12,7 @@ damvitool
 Introduction
 ============
 
-As stated above this project was inspired by Sandman by Jeff Knup. At the same time damvitool improves on the original in a few important areas:
+As stated above this project was inspired by Sandman by Jeff Knupp. At the same time damvitool improves on the original in a few important areas:
 
 * Support for compound queries (both for REST API and UI)
 * Extremely flexible and powerful UI (query builder wizard) thanks to SmartClient library by Isomorphic
@@ -28,20 +28,16 @@ Resources
 Frameworks and libraries used
 =============================
 
-SQLAlchemy (https://github.com/zzzeek/sqlalchemy) v0.9.8+
-
-Morepath (https://github.com/morepath/morepath) v0.9+
-
-AngularJS (http://www.angularjs.org) v1.2.1+
-
-Isomorphic SmartClient (http://www.smartclient.com/product/smartclient.jsp) v9.1+
-
-ng_isc (https://github.com/praxigento/ng-isc) v0.2+
+* `SQLAlchemy <https://github.com/zzzeek/sqlalchemy>`_ v0.9.8+
+* `Morepath <https://github.com/morepath/morepath>`_ v0.9+
+* `AngularJS <http://www.angularjs.org>`_ v1.2.1+
+* `Isomorphic SmartClient <http://www.smartclient.com/product/smartclient.jsp>`_ v9.1+
+* `ng_isc <https://github.com/praxigento/ng-isc>`_ v0.2+
 
 Versioning
 ==========
 
-Semantic Versioning 2.0.0 (http://semver.org)
+`Semantic Versioning 2.0.0 <http://semver.org>`_
 
 Quick start
 ===========
@@ -68,8 +64,8 @@ damvitool admin panel access
 ----------------------------
 Default admin panel URL is ``http://localhost:8080``
 
-Construct new request to database
----------------------------------
+Build new database request
+--------------------------
 1. Click ``Wizard`` button of the left side menu.
 
 .. image:: https://raw.githubusercontent.com/praxigento/damvitool/master/docs/pic1.png
