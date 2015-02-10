@@ -25,10 +25,12 @@ As stated above this project was inspired by Sandman by Jeff Knupp. At the same 
 
 Resources
 =========
+* `Run/edit damvitool in cloud IDE <https://codenvy.com/f?id=nbmasoip8dnvkc4d>`_
 * `Documentation <http://damvitool.readthedocs.org>`_
 * `Bug tracker <http://github.com/praxigento/damvitool/issues>`_
+* `Demo <http://85.25.43.232:8180>`_
 * `Code <http://github.com/praxigento/damvitool>`_
-* `Run/edit damvitool in cloud IDE <https://codenvy.com/f?id=nbmasoip8dnvkc4d>`_
+
 
 Frameworks and libraries used
 =============================
