@@ -1,6 +1,6 @@
 from json import dumps
 from damvitool.utils import to_json_type
-from morepath import redirect, Response
+from morepath import redirect, Response, NO_IDENTITY, Identity
 from damvitool.main import DamvitoolApp
 from damvitool.model import Root, Database, Table, Record, UniGridRequest
 from webob.exc import HTTPException
@@ -8,12 +8,17 @@ from webob.exc import HTTPException
 __author__ = 'alex-smirnov'
 
 
-@DamvitoolApp.json(model=Root, permission=object)
+@DamvitoolApp.json(model=Root)
 def root_default(self, request):
-    return redirect(request.link(Database()))
+    return self.get_schema(request)
 
 
-@DamvitoolApp.json(model=Database, name='mode', permission=object)
+@DamvitoolApp.json(model=Database, permission=Identity)
+def database(self, request):
+    return self.get_schema(request)
+
+
+@DamvitoolApp.json(model=Database, name='mode', permission=Identity)
 def database_mode(self, request):
     """Get database MODE data
 
@@ -21,7 +26,7 @@ def database_mode(self, request):
     return self.get_mode()
 
 
-@DamvitoolApp.json(model=Table, permission=object)
+@DamvitoolApp.json(model=Table, permission=Identity)
 def tables(self, request):
     return {
         'data': [request.view(Record.from_object(r)) for r in self.select()],
@@ -29,7 +34,7 @@ def tables(self, request):
     }
 
 
-@DamvitoolApp.json(model=Table, name='add', request_method='POST', permission=object)
+@DamvitoolApp.json(model=Table, name='add', request_method='POST', permission=Identity)
 def tables_add(self, request):
     """Add record to table with values form request body
 
@@ -38,7 +43,7 @@ def tables_add(self, request):
     return request.view(Record.from_object(r))
 
 
-@DamvitoolApp.json(model=Record, permission=object)
+@DamvitoolApp.json(model=Record, permission=Identity)
 def record(self, request):
     """Get json object with record data
 
@@ -61,7 +66,7 @@ def record(self, request):
     return result_dict
 
 
-@DamvitoolApp.json(model=Record, request_method='PATCH', permission=object)
+@DamvitoolApp.json(model=Record, request_method='PATCH', permission=Identity)
 def record_patch(self, request):
     """Upgrade record data
 
@@ -70,7 +75,7 @@ def record_patch(self, request):
     return request.view(Record.from_object(r))
 
 
-@DamvitoolApp.json(model=Record, request_method='PUT', permission=object)
+@DamvitoolApp.json(model=Record, request_method='PUT', permission=Identity)
 def record_put(self, request):
     """Replace record data
 
@@ -79,7 +84,7 @@ def record_put(self, request):
     return request.view(Record.from_object(r))
 
 
-@DamvitoolApp.json(model=Record, request_method='DELETE', permission=object)
+@DamvitoolApp.json(model=Record, request_method='DELETE', permission=Identity)
 def record_put(self, request):
     """Delete record
 
@@ -88,17 +93,17 @@ def record_put(self, request):
     return {}
 
 
-@DamvitoolApp.json(model=UniGridRequest, request_method='POST', permission=object)
+@DamvitoolApp.json(model=UniGridRequest, request_method='POST', permission=Identity)
 def uni_grid_request(self, request):
     return self.query(request.json)
 
 
-@DamvitoolApp.json(model=UniGridRequest, name='summaries', request_method='POST', permission=object)
+@DamvitoolApp.json(model=UniGridRequest, name='summaries', request_method='POST', permission=Identity)
 def uni_grid_request_summaries(self, request):
     return self.query_summaries(request.json)
 
 
-@DamvitoolApp.view(model=UniGridRequest, name='export', request_method='POST', permission=object)
+@DamvitoolApp.view(model=UniGridRequest, name='export', request_method='POST', permission=Identity)
 def uni_grid_request_export(self, request):
     return self.query_export(request.json)
 

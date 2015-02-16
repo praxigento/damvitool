@@ -5,25 +5,25 @@ var damvitoolApp = angular.module('damvitool', ['ngRoute', 'ngResource', 'ng-isc
 damvitoolApp.factory('Mode', ['$resource', function ($resource) {
     'use strict';
 
-    return $resource('proxy/database/mode', {}, {query: {method: 'GET'}, isArray: true});
+    return $resource('api/database/mode', {}, {query: {method: 'GET'}, isArray: true});
 }]);
 
 damvitoolApp.factory('UniGridRequest', ['$resource', function ($resource) {
     'use strict';
 
-    return $resource('proxy/database/uni-grid-request', {}, {query: {method: 'POST'}, isArray: true});
+    return $resource('api/database/uni-grid-request', {}, {query: {method: 'POST'}, isArray: true});
 }]);
 
 damvitoolApp.factory('UniGridSummariesRequest', ['$resource', function ($resource) {
     'use strict';
 
-    return $resource('proxy/database/uni-grid-request/summaries', {}, {query: {method: 'POST'}, isArray: true});
+    return $resource('api/database/uni-grid-request/summaries', {}, {query: {method: 'POST'}, isArray: true});
 }]);
 
 damvitoolApp.factory('UniGridExportRequest', ['$resource', function ($resource) {
     'use strict';
 
-    return $resource('proxy/database/uni-grid-request/export', {}, {query: {method: 'POST'}, isArray: false});
+    return $resource('api/database/uni-grid-request/export', {}, {query: {method: 'POST'}, isArray: false});
 }]);
 
 damvitoolApp.config(['$routeProvider', function ($routeProvider) {
@@ -541,7 +541,7 @@ damvitoolApp.controller('WizardCtrl', function ($scope, $q, Mode, UniGridRequest
         angular.forEach($scope.resultCtrl.getSort(), function (s) {
             ugr.order.push({alias: s.property, asc: s.direction == 'ascending'});
         });
-        $http.post('proxy/database/uni-grid-request/export', {unigrid: ugr}).
+        $http.post('api/database/uni-grid-request/export', {unigrid: ugr}).
             success(function (data, status, headers, config) {
                 // check for a filename
                 var filename = 'export.csv';

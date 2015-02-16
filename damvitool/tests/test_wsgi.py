@@ -13,20 +13,20 @@ def test_morepath_config(wsgi):
 
 def test_login_request(wsgi):
     app = TestApp(wsgi)
-    login_resp = app.post_json('/proxy/login', {'username': 'user1', 'password': 'password1'})
+    login_resp = app.post_json('/api/login', {'username': 'user1', 'password': 'password1'})
     globals()['auth'] = login_resp.json
 
 
 def test_mode_request(wsgi):
     app = TestApp(wsgi)
-    app.get('/proxy/database/mode', headers={
+    app.get('/api/database/mode', headers={
         'Authorization': 'Basic ' + str(b64encode(
             (auth.get('username') + ':' + auth.get('sessionId')).encode('ascii')).decode('ascii'))})
 
 
 def test_uni_grid_request(wsgi):
     app = TestApp(wsgi)
-    app.post_json('/proxy/database/uni-grid-request', {
+    app.post_json('/api/database/uni-grid-request', {
         "unigrid": {
             "entities": [
                 {
@@ -78,10 +78,10 @@ def test_uni_grid_request(wsgi):
 
 def test_logout_request(wsgi):
     app = TestApp(wsgi)
-    app.post_json('/proxy/logout', {}, headers={
+    app.post_json('/api/logout', {}, headers={
         'Authorization': 'Basic ' + str(b64encode(
             (auth.get('username') + ':' + auth.get('sessionId')).encode('ascii')).decode('ascii'))})
-    app.post_json('/proxy/logout', {}, headers={
+    app.post_json('/api/logout', {}, headers={
         'Authorization': 'Basic ' + str(b64encode(
             (auth.get('username') + ':' + auth.get('sessionId')).encode('ascii')).decode('ascii'))}, status=403)
     globals()['auth'] = None

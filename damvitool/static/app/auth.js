@@ -2,8 +2,8 @@
 
 var authMod = angular.module('prxgtAuth', ['ngRoute', 'ngResource', 'ng-isc']);
 
-var url_login = 'proxy/login';
-var url_logout = 'proxy/logout';
+var url_login = 'api/login';
+var url_logout = 'api/logout';
 
 authMod.factory('Login', ['$resource', function ($resource) {
     'use strict';

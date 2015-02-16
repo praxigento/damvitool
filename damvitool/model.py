@@ -3,6 +3,7 @@ from sqlalchemy import func, or_, and_, not_, sql
 from sqlalchemy.orm import class_mapper, aliased
 from damvitool.db import Base, orm_classes, Session
 from json import loads
+from damvitool.users import Login, Logout
 from damvitool.utils import to_json_type
 
 __author__ = 'alex-smirnov'
@@ -11,6 +12,18 @@ __author__ = 'alex-smirnov'
 class Root(object):
     def __init__(self):
         pass
+
+    def get_schema(self, request):
+        """
+        Get object, with REST API login schema
+
+        :return: schema object
+        """
+        schema = {
+            'login': request.link(Login()),
+            'schema': request.link(Database())
+        }
+        return schema
 
 
 class Database(object):
@@ -61,6 +74,30 @@ class Database(object):
         'BYTEA': 'binary',
         'DOUBLE_PRECISION': 'numeric',
     }
+
+    def get_schema(self, request):
+        """
+        Get object, with REST API schema
+
+        :return: schema object
+        """
+        schema = {
+            # 'login': request.link(Login()),
+            'logout': request.link(Logout()),
+            'mode': request.link(Database(), name='mode'),
+            'uni-grid-request': request.link(UniGridRequest()),
+            'entities': {}
+        }
+        for c in orm_classes:
+            t = Table(c)
+            r = Record(c, 0)
+            schema['entities'][c] = {
+                'get': request.link(t),
+                'add': request.link(t, name='add'),
+                'record': request.link(r).replace('[0]', '[{' + '},{'.join(
+                    [pk.name for pk in class_mapper(orm_classes[c]).primary_key]) + '}]')
+            }
+        return schema
 
     def get_mode(self):
         """

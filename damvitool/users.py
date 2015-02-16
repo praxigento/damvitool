@@ -96,6 +96,9 @@ class DamvitoolAuthIdentityPolicy(object):
         :type request: :class:`morepath.Request`.
         :returns: :class:`morepath.security.Identity` instance.
         """
+        if Users.no_auth:
+            return Identity(userid='anonymous', sessionId='')
+
         try:
             authorization = request.authorization
         except ValueError:
@@ -182,7 +185,7 @@ def verify_identity(identity):
     return Users.checkSession(identity.userid, identity.sessionId)
 
 
-@dbApp.permission_rule(model=object, permission=object)
+@dbApp.permission_rule(model=object, permission=Identity)
 def all_permission(identity, model, permission):
     return True
 
@@ -214,7 +217,7 @@ def get_logout():
     return Logout()
 
 
-@dbApp.json(model=Logout, request_method='POST', permission=object)
+@dbApp.json(model=Logout, request_method='POST', permission=Identity)
 def logout(self, request):
     credentials = request.identity
     Users.dropSession(credentials.userid, credentials.sessionId)

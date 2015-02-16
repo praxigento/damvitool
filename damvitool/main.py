@@ -16,7 +16,7 @@ from . import path, view, users
 staticApp = StaticApp()
 
 
-@StaticApp.mount(app=DamvitoolApp, path='proxy')
+@StaticApp.mount(app=DamvitoolApp, path='api')
 def mount_app():
     return dbApp
 

@@ -20,7 +20,7 @@ def get_table(table_name):
 
 
 @DamvitoolApp.path(model=Record, path='database/tables/{table_name}/recs/{id}',
-          variables=lambda model: dict(table_name=model.table_name, id=model.ids))
+          variables=lambda model: dict(table_name=model.table_name, id='[' + ','.join(str(i) for i in model.ids) + ']'))
 def get_record(table_name, id):
     return Record(table_name, id)
 
