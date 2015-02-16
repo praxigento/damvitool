@@ -14,6 +14,7 @@ cache:
 
 install:
   - pip install .
+  - pip install -e .[extra]
 
 before_script:
   - npm install

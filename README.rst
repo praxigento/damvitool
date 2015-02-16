@@ -13,6 +13,9 @@ damvitool
     :target: http://badge.fury.io/py/damvitool
     :alt: Latest version
 
+.. image:: https://travis-ci.org/praxigento/damvitool.svg
+    :target: https://travis-ci.org/praxigento/damvitool
+
 Introduction
 ============
 
