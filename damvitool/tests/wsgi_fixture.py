@@ -9,7 +9,8 @@ from damvitool.users import Users
 
 @pytest.fixture(scope='session')
 def wsgi(orm):
-    Users.load()
+    with open('etc/users') as f:
+        Users.load(f)
 
     # morepath.autosetup()
     c = morepath.setup()
