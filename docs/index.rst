@@ -15,7 +15,9 @@ Contents:
    using
    auth
    frontend
+   rest
    develop
+   roadmap
 
 
 Indices and tables

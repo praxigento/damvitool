@@ -2,6 +2,7 @@
 Installation
 ============
 
-Simply run::
+Use pip to install damvitool::
 
-    pip install damvitool
+    $ pip install damvitool
+

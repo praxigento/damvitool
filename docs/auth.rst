@@ -10,3 +10,4 @@ Here is the example of users.txt file content::
 
     user1=password1
     user2=password2
+

@@ -4,16 +4,21 @@ Using damvitool
 
 Run damvitool with sample database
 ----------------------------------
-
 To run damvitool execute the following command::
 
-    damvitool --database sqlite:///damvitool/data/Chinook_Sqlite.sqlite
+    $ damvitool
 
-Where *sqlite:///damvitool/data/Chinook_Sqlite.sqlite* is database URL in SQLAlchemy format (http://docs.sqlalchemy.org/en/rel_0_9/core/engines.html#database-urls).
+When you run damvitool from command line without parameters it connects by default to the demo Chinook Database for SQLite.
 
-damvitool starts web server with RESTful API for data access and client application that utilizes that API accessible from any browser.
+To connect to your legacy database run damvitool with your database URL as parameter, like so::
 
-If you start damvitool without any parameters it will connect by default to the demo database Chinook_Sqlite, which is distributed together with damvitool.
+$ damvitool --database sqlite:///damvitool/data/Chinook_Sqlite.sqlite
+
+where *sqlite:///damvitool/data/Chinook_Sqlite.sqlite* is database URL in SQLAlchemy format (http://docs.sqlalchemy.org/en/rel_0_9/core/engines.html#database-urls).
+
+Admin panel access
+------------------
+Default admin panel URL is ``http://localhost:8080``
 
 Supported databases
 -------------------
