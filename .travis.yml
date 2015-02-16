@@ -1,0 +1,23 @@
+language: python
+
+python:
+  - 2.7
+  - 3.4
+
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+    - node_modules
+
+install:
+  - pip install .
+
+before_script:
+  - npm install
+
+script:
+  - py.test damvitool
+  - npm test
