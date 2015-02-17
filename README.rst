@@ -101,3 +101,12 @@ Build new database request
 6. View results.
 
 .. image:: https://raw.githubusercontent.com/praxigento/damvitool/master/docs/pic4.png
+
+Changelog
+=========
+Version 0.2.0
+-------------
+* Move RESTful API from /proxy/* to /api/*
+* Improved documentation
+* Fix backend and frontend e2e tests
+
