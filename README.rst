@@ -19,9 +19,9 @@ damvitool
 Introduction
 ============
 
-This project was inspired by `Sandman <https://github.com/jeffknupp/sandman>`_ by Jeff Knupp. At the same time damvitool improves on the original in a few important areas:
+This project was inspired by `Sandman <https://github.com/jeffknupp/sandman>`_ by Jeff Knupp. Damvitool improves on the original in a few important areas:
 
-* Support for compound queries (both for REST API and UI)
+* Support for compound queries (on server side (REST API) and client side (UI))
 * Extremely flexible and powerful UI (query builder wizard) thanks to SmartClient library by Isomorphic
 * Support for column summaries 
 * Unlimited resulting grid (sorted&filtered) export to CSV file
